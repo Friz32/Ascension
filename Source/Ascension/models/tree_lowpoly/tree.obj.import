@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tree.obj-0611b9a3f01ff82d9c5f8bd015b38aff.mesh"
+
+[deps]
+
+files=[ "res://.import/tree.obj-0611b9a3f01ff82d9c5f8bd015b38aff.mesh" ]
+
+source_file="res://models/tree_lowpoly/tree.obj"
+dest_files=[ "res://.import/tree.obj-0611b9a3f01ff82d9c5f8bd015b38aff.mesh", "res://.import/tree.obj-0611b9a3f01ff82d9c5f8bd015b38aff.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 6, 6, 6 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

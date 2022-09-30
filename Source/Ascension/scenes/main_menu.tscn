@@ -1,0 +1,91 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://resources/theme.tres" type="Theme" id=1]
+[ext_resource path="res://scripts/main_menu.gd" type="Script" id=2]
+[ext_resource path="res://resources/dynfonts/arial_big.tres" type="DynamicFont" id=4]
+[ext_resource path="res://scenes/ui/menu_button.tscn" type="PackedScene" id=5]
+
+[sub_resource type="CubeMesh" id=1]
+
+[sub_resource type="Environment" id=2]
+background_mode = 1
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Logo" type="Label" parent="."]
+margin_left = 49.0
+margin_top = 197.0
+margin_right = 381.0
+margin_bottom = 279.0
+custom_fonts/font = ExtResource( 4 )
+text = "Ascension"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 84.0
+margin_top = 304.0
+margin_right = 233.0
+margin_bottom = 505.0
+color = Color( 0, 0, 0, 0.270588 )
+
+[node name="Buttons" type="VBoxContainer" parent="ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = 8.0
+margin_right = -8.0
+margin_bottom = -8.0
+
+[node name="Singleplayer" parent="ColorRect/Buttons" instance=ExtResource( 5 )]
+margin_right = 133.0
+margin_bottom = 30.0
+text = "Singleplayer"
+
+[node name="Multiplayer" parent="ColorRect/Buttons" instance=ExtResource( 5 )]
+margin_top = 34.0
+margin_right = 133.0
+margin_bottom = 64.0
+text = "Multiplayer"
+
+[node name="Settings" parent="ColorRect/Buttons" instance=ExtResource( 5 )]
+margin_top = 68.0
+margin_right = 133.0
+margin_bottom = 98.0
+text = "Settings"
+
+[node name="Quit" parent="ColorRect/Buttons" instance=ExtResource( 5 )]
+margin_top = 102.0
+margin_right = 133.0
+margin_bottom = 132.0
+text = "Quit"
+
+[node name="Version" type="Label" parent="."]
+margin_left = 8.0
+margin_top = 700.0
+margin_right = 390.0
+margin_bottom = 714.0
+text = "v0.1"
+clip_text = true
+
+[node name="Spatial" type="Spatial" parent="."]
+
+[node name="Camera" type="Camera" parent="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.01228 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.84909, 0.297561, -0.436467, -0.44633, 0.84607, -0.291469, 0.282552, 0.442292, 0.851201, 0, 0, 0 )
+mesh = SubResource( 1 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Spatial"]
+environment = SubResource( 2 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Spatial"]
+transform = Transform( 0.413355, -0.702743, 0.579043, 0.436816, 0.710999, 0.551064, -0.798955, 0.0251498, 0.600865, 0, 0, 0 )
+
+[connection signal="pressed" from="ColorRect/Buttons/Singleplayer" to="." method="on_singleplayer_pressed"]

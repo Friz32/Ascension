@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/oak.obj-7c99feecea6e21e27fcf8ba58bfaba5f.mesh"
+
+[deps]
+
+files=[ "res://.import/oak.obj-7c99feecea6e21e27fcf8ba58bfaba5f.mesh" ]
+
+source_file="res://models/oak/oak.obj"
+dest_files=[ "res://.import/oak.obj-7c99feecea6e21e27fcf8ba58bfaba5f.mesh", "res://.import/oak.obj-7c99feecea6e21e27fcf8ba58bfaba5f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 0.1, 0.1, 0.1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

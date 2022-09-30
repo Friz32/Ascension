@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tree_mango_var02.obj-36b1834755743f6d83c7c8236c672dc0.mesh"
+
+[deps]
+
+files=[ "res://.import/tree_mango_var02.obj-36b1834755743f6d83c7c8236c672dc0.mesh" ]
+
+source_file="res://models/tree_mango/tree_mango_var02.obj"
+dest_files=[ "res://.import/tree_mango_var02.obj-36b1834755743f6d83c7c8236c672dc0.mesh", "res://.import/tree_mango_var02.obj-36b1834755743f6d83c7c8236c672dc0.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 0.08, 0.08, 0.08 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

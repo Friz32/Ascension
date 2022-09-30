@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/fence_bend.obj-4bb8755b0ba9e3e298b3ff73a625d24d.mesh"
+
+[deps]
+
+files=[ "res://.import/fence_bend.obj-4bb8755b0ba9e3e298b3ff73a625d24d.mesh" ]
+
+source_file="res://models/nature/fence_bend.obj"
+dest_files=[ "res://.import/fence_bend.obj-4bb8755b0ba9e3e298b3ff73a625d24d.mesh", "res://.import/fence_bend.obj-4bb8755b0ba9e3e298b3ff73a625d24d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

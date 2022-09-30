@@ -1,0 +1,12 @@
+newmtl oakblaetter
+Ka 1 1 1
+Kd 1 1 1
+Ks 0 0 0
+Tr 0.1
+map_Kd oakleaf_dark.tga
+
+newmtl oakstamm
+Ka 1 1 1
+Kd 1 1 1
+Ks 0 0 0
+map_Kd oakbark.jpg
